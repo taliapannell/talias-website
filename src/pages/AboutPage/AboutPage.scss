@@ -1,0 +1,38 @@
+//   .about-page {
+//   color: black; /* Make text black */
+//   padding: 20px; /* Add some padding */
+//   text-align: center; /* Center text and image horizontally */
+//   padding: 20px; /* Add some padding */
+// }
+
+// .about-text {
+//   margin-top: -610px; /* Add some space below the text */
+//   margin-right: 800px;
+//   text-align: center; /* Center text and image horizontally */
+//  }
+.about-page {
+  color: black; /* Make text black */
+  padding: 20px; /* Add some padding */
+  text-align: center; /* Center text and image horizontally */
+  background-image: url('/src/pages/AboutPage/tabbackground.png'); /* Set background image */
+  background-size: contain; /* Ensure the entire background image is visible */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  height: 96vh; /* Use full viewport height */
+  width: 93vw; /* Use full viewport width */
+  position: relative; /* Establish a containing block for absolute positioning */
+  margin-left: 60px;
+}
+
+.about-text {
+  position: absolute; /* Position the text absolutely */
+  top: 40%; /* Move the text further up */
+  left: 0%; /* Move the text more to the left */
+  text-align: left; /* Align text to the left */
+}
+
+.about-text-content {
+  color: black; /* Add a white background with 80% opacity */
+  margin-top: -150px;
+  font-weight: bold;
+}

@@ -1,0 +1,59 @@
+/* Import Maven Pro from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap');
+
+:root {
+  font-family: 'Maven Pro', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: white;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 7.5em;
+  line-height: 2.1;
+  margin-left: 50px;
+  margin-top: 160px;
+}
+
+h2 {
+  font-size: 6.5em;
+  line-height: 2.5;
+  margin-left: 50px;
+  margin-top: -200px;
+}
+button {
+  border-radius: 8px;
+}
+
+h3 {
+  font-size: 4.5em;
+  line-height: 0;
+  margin-left: 2px;
+  margin-top: -200px;
+  min-height: 20vh;
+}

@@ -1,0 +1,11 @@
+#dropdown-basic {
+  border-color: #BDBDBD !important;
+}
+
+#dropdown-basic:focus, #dropdown-basic:active, #dropdown-basic:hover {
+  border-color: #BDBDBD !important;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
