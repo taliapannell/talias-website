@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Im
 import Header from '../src/components/Header/Header.tsx';
 import MainPage from './pages/MainPage/MainPage.tsx';
 import AboutPage from '../src/pages/AboutPage/AboutPage.tsx';
-import DemoesPage from '../src/pages/DemoesPage/demoespage.tsx';
-import ProjectsPage from '/Users/talia.pannell/Desktop/repos/tp:website/talia-website/src/pages/ProjectsPage/ProjectsPage.tsx';
+import DemoesPage from '../src/pages/DemoesPage/DemoesPage.tsx';
+import ProjectsPage from '../src/pages/ProjectsPage/ProjectsPage.tsx';
 import ResumePage from '../src/pages/ResumePage/ResumePage.tsx';
 import WhoIAmPage from '../src/pages/WhoIAmPage/WhoIAmPage.tsx';
 
