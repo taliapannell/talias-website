@@ -6,8 +6,8 @@ const DemoesPage: React.FC = () => {
   return (
     <div className="demoes-page">
       <Header /> {/* Include the Header component */}
-      <h1>About Page</h1>
-      <p>This is the about page.</p>
+      <h1>Demoes Page</h1>
+      <p>This is the demoes page.</p>
     </div>
   );
 };

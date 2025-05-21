@@ -6,8 +6,8 @@ const WhoIAmPage: React.FC = () => {
   return (
     <div className="whoiam-page">
       <Header /> {/* Include the Header component */}
-      <h1>About Page</h1>
-      <p>This is the about page.</p>
+      <h1>Who I Am Page</h1>
+      <p>This is the Who I Am page.</p>
     </div>
   );
 };
