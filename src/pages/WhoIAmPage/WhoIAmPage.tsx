@@ -39,7 +39,7 @@ const WhoIAmPage: React.FC = () => {
         <video
           className="whoiam-video"
           ref={videoRef}
-          src="/MyStory.mp4"
+          // src="/MyStory.mp4"
           autoPlay
           loop
           muted
