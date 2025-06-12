@@ -1,8 +1,15 @@
 import React from 'react';
 import Header from '../../../src/components/Header/Header.tsx';
 import './ProjectsPage.scss'; 
+import assetImage from '../../assets/images/asset.png';
+import rentalImage from '../../assets/images/rental-detective.png';
+import infinadeckImage from '../../assets/images/infinadeck.png';
+import retailChoiceImage from '../../assets/images/retail-choice.png';
+import incidentResponseImage from '../../assets/images/google-noc.png';
+import documentIngestionImage from '../../assets/images/document.png';
+import maximoAnalyticsImage from '../../assets/images/maximo-analytics.png';
+import tariffNavigatorImage from '../../assets/images/tariff-nav.png';
 
-// Project data structure
 interface Project {
   id: number;
   title: string;
@@ -10,74 +17,47 @@ interface Project {
   imageUrl: string;
 }
 
-// Sample project data - replace with your actual projects
 const projects: Project[] = [
   {
     id: 1,
-    title: "Project One",
+    title: "Rental Detective",
     description: "Short description of project one goes here.",
-    imageUrl: "/path/to/image1.jpg"
-  },
-  {
+    imageUrl: rentalImage
+  },{
     id: 2,
-    title: "Project Two",
+    title: "The Infinadeck",
     description: "Short description of project two goes here.",
-    imageUrl: "/path/to/image2.jpg"
+    imageUrl: infinadeckImage
   },  {
     id: 3,
-    title: "Project Two",
+    title: "Retail Choice Angel",
     description: "Short description of project two goes here.",
-    imageUrl: "/path/to/image2.jpg"
+    imageUrl: retailChoiceImage
   },  {
     id: 4,
-    title: "Project Two",
+    title: "Incident Response",
     description: "Short description of project two goes here.",
-    imageUrl: "/path/to/image2.jpg"
-  },  {
-    id: 5,
-    title: "Project Two",
-    description: "Short description of project two goes here.",
-    imageUrl: "/path/to/image2.jpg"
-  },  {
-    id: 6,
-    title: "Project Two",
-    description: "Short description of project two goes here.",
-    imageUrl: "/path/to/image2.jpg"
-  },  {
+    imageUrl: incidentResponseImage
+  }, {
     id: 7,
-    title: "Project Two",
+    title: "Document Ingestion",
     description: "Short description of project two goes here.",
-    imageUrl: "/path/to/image2.jpg"
-  },  {
-    id: 8,
-    title: "Project Two",
-    description: "Short description of project two goes here.",
-    imageUrl: "/path/to/image2.jpg"
-  },  {
+    imageUrl: documentIngestionImage
+  }, {
     id: 9,
-    title: "Project Two",
+    title: "Maximo Analytics",
     description: "Short description of project two goes here.",
-    imageUrl: "/path/to/image2.jpg"
+    imageUrl: maximoAnalyticsImage
   },  {
     id: 10,
-    title: "Project Two",
+    title: "Tariff Navigator",
     description: "Short description of project two goes here.",
-    imageUrl: "/path/to/image2.jpg"
+    imageUrl: tariffNavigatorImage
   },  {
     id: 11,
-    title: "Project Two",
+    title: "Asset Criticality",
     description: "Short description of project two goes here.",
-    imageUrl: "/path/to/image2.jpg"
-  },  {
-    id: 12,
-    title: "Project Two",
-    description: "Short description of project two goes here.",
-    imageUrl: "/path/to/image2.jpg"
-  },  {
-    id: 13,
-    title: "Project Two",
-    description: "Short description of project two goes here.",
-    imageUrl: "/path/to/image2.jpg"
+    imageUrl: assetImage
   },
 ];
 
