@@ -10,7 +10,7 @@
   
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); // Keep the grid layout
     gap: 40px;
     margin-top: 30px;
   }
@@ -21,20 +21,21 @@
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
     background-color: #fff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
+    width: 100%; // Ensure cards fit within the grid
+
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
     }
     
     .project-image {
-      height: 250px;
+      height: 250px; // Keep the height consistent
       overflow: hidden;
       
       img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        width: 100%; // Ensure the image fills the card width
+        height: 100%; // Ensure the image fills the card height
+        object-fit: contain; // Change from `cover` to `contain` for better fitting
       }
     }
     
@@ -43,7 +44,6 @@
       
       .project-title {
         font-size: 1.5rem;
-        // margin-bottom: 12px;
         color: #333; 
         font-weight: 600;
       }
