@@ -1,4 +1,83 @@
- .projects-page {
-  color: black; /* Make text black */
-  padding: 20px; /* Add some padding */
+.projects-page {
+  padding: 20px;
+  margin-top: 80px; // Add margin to move content down below header
+  
+  .projects-container {
+    max-width: 1600px; // Increased max width to accommodate 4 cards
+    margin-left: 100px;
+    padding: 20px;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); // Changed to 4 columns per row
+    gap: 40px; // Increased gap between cards for more space
+    margin-top: 30px; // Add space at the top
+  }
+  
+  .project-card {
+    border-radius: 12px; // Larger radius
+    overflow: hidden;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); // More pronounced shadow
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .project-image {
+      height: 250px; // Taller images
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    
+    .project-content {
+      padding: 25px; // More padding inside the card
+      
+      .project-title {
+        font-size: 1.5rem; // Larger font
+        margin-bottom: 12px;
+        color: #333; 
+        font-weight: 600; // Make it bolder
+      }
+      
+      .project-description {
+        font-size: 1.1rem; // Larger font
+        color: #666;
+        line-height: 1.5; // Better line spacing
+      }
+    }
+  }
+}
+
+// Better responsive handling
+@media (max-width: 1400px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr); // 3 columns on large screens
+  }
+}
+
+@media (max-width: 1100px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr); // 2 columns on medium screens
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr; // 1 column on smaller screens
+  }
+  
+  .project-card {
+    .project-image {
+      height: 200px; // Slightly smaller on mobile
+    }
+  }
 }
