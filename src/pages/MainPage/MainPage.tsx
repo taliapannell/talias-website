@@ -38,7 +38,7 @@ const Hello: React.FC<HelloProps> = ({ }) => {
           setDisplayedText(currentWord.substring(0, charIndex + 1));
           setCharIndex(charIndex + 1);
         } else {
-          setTimeout(() => setIsDeleting(true), 1000); // Pause before deleting
+          setTimeout(() => setIsDeleting(true), 1000); 
         }
       }
     };
