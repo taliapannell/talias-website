@@ -4,7 +4,7 @@ import { Card, CardActionArea, CardContent, CardMedia, Typography, Container } f
 import Header from '../../../src/components/Header/Header.tsx';
 import './DemosPage.scss';
 import hudsonImage from '../../assets/images/hudson.png';
-import infinadeckImage from '../../assets/images/infinadeck.png';
+import AVPImage from '../../assets/images/AppleVisionPro.jpg';
 import mairImage from '../../assets/images/mair.png';
 import mendiImage from '../../assets/images/mendi.png';
 import questProImage from '../../assets/images/questPro.png';
@@ -21,33 +21,33 @@ const demos: Demo[] = [
   {
     id: 1,
     title: "Hudson",
-    description: `Rental Detective is a next-generation, AI-powered web application built to revolutionize the apartment hunting experience. This platform is built using React, TypeScript, and Vite, hosted on GitHub, and powered by AWS services for scalability, speed, and security. Searching for an apartment can be stressful, time-consuming, and expensive — especially when you're paying application fees only to find out later that you don't qualify. Rental Detective solves this with a personalized, smart, and secure process that saves renters time, money, and frustration.`,
+    description: `Hudson is an agile, quadruped robot dog developed by Liquid Studios in collaboration with Boston Dynamics, designed to autonomously navigate enterprise environments, collect data from key points of interest, and support tasks like fire safety inspections and hazardous area monitoring. It serves as a compelling demonstration of service robotics, sparking client conversations across industries by showcasing how robotics, machine learning, and image recognition can enhance operational safety and efficiency.`,
     imageUrl: hudsonImage
   },
    {
     id: 2,
-    title: "Infinadeck",
-    description: "Retail Choice Angel is a GenAI-powered assistant developed to support Con Edison's Retail Access operations. It addresses the high volume of system exceptions—nearly 1,000 monthly \"To Dos\"—that arise from billing disputes and data inconsistencies between ConEd and ESCOs (Energy Service Companies).",
-    imageUrl: infinadeckImage
+    title: "AVP (Apple Vision Pro)",
+    description: "The Apple Vision Pro is Apple’s first spatial computing headset, blending augmented and virtual reality with ultra-high-resolution micro-OLED displays, spatial audio, and intuitive hand and eye tracking to deliver immersive experiences for work, entertainment, and communication. Internally, it has been used in client demos and innovation labs for showcasing immersive environments like jetpack simulations and concerts, though enterprise support is still limited due to compatibility issues with Microsoft apps and device management systems.",
+    imageUrl: AVPImage
   }, {
     id: 3,
     title: "MaIR",
-    description: "The NOC Incident Response Accelerator is a GenAI-powered solution designed to transform traditional Network Operations Center workflows by automating incident detection, triage, and resolution through intelligent event correlation, predictive analytics, and autonomous agents—dramatically reducing mean time to resolution (MTTR), minimizing costly downtime, and enhancing operational resilience by integrating real-time monitoring, anomaly detection, and AI-generated troubleshooting steps across complex infrastructure environments.",
+    description: "MAIR is a hyper-realistic digital human, a digital twin of Mary Hamilton, Accenture’s Technology Innovation Lead for North America and Latin America. She is powered by Generative AI, utilizing OpenAI’s GPT-3.5-turbo chat model and prompt engineering, and integrated with technologies that enable question and answering over a corpus of documents.",
     imageUrl: mairImage
   }, {
     id: 4,
     title: "Mendi (Brain Gym)",
-    description: "The Document Ingestion Demo is a robust, end-to-end GenAI-powered pipeline that enables seamless uploading, parsing, embedding, and storage of documents using Azure-native services and large language models, empowering downstream applications—such as intelligent search, chatbots, and compliance tools—with fast, scalable, and secure access to structured knowledge extracted from unstructured content.",
+    description: "Accenture’s BrainGym utilizes brain-sensing technologies and generative AI to provide continuous insights into the needs of the workforce through assessing mental wellness and fitness in real time.​​ Leveraging neurotechnology combined with generative AI, BrainGym is able to measure brain activity and provide signal feedback to measure focus and attention of individuals within the workforce, including personalized recommendations.",
     imageUrl: mendiImage
   }, {
     id: 5,
     title: "Meta Quest Pro",
-    description: "The Maximo Analytics Demo is a forward-looking initiative that leverages predictive analytics, operational data, and environmental inputs to proactively identify equipment failures and optimize maintenance strategies, combining IBM’s Maximo Application Suite with custom-built dashboards and AI-powered insights to deliver real-time asset performance monitoring, reduce operational costs, and enhance decision-making across asset-intensive industries through a unified, cloud-enabled, and user-centric platform.",
+    description: "The Meta Quest Pro is a high-end standalone mixed reality headset developed by Meta, designed primarily for enterprise and professional use. Accenture’s VR solution needs due to its native support for required apps, ergonomic design, and spatial computing capabilities, despite limitations like short battery life and the need for Meta account setup.",
     imageUrl: questProImage
   }, {
     id: 6,
     title: "Hololens",
-    description: "The Tariff Navigator is a GenAI-powered tool designed to help ConEd's VDER Specialists and Specialized Activities Managers quickly interpret and apply complex tariff and legal documents. These documents are often dense, frequently updated, and critical for validating CDG (Community Distributed Generation) allocation plans.",
+    description: "The Microsoft HoloLens is a self-contained augmented reality headset that overlays interactive 3D holograms onto the real world, enabling hands-free collaboration, training, and data visualization across industries like healthcare, design, and field services. Internally, it has been evaluated as a strong enterprise solution due to its native support for Intune MDM, spatial mapping, and Windows UX, with use cases ranging from surgical assistance and interior design to remote expert guidance and immersive training.",
     imageUrl: hololensImage
   }
 ];
