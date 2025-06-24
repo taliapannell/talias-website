@@ -95,13 +95,10 @@ const DemoCard: React.FC<DemoCardProps> = ({ demo, onClick, flipped }) => {
 };
 
 const DemosPage: React.FC = () => {
-  const [flippedCards, setFlippedCards] = React.useState<{ [key: number]: boolean }>({});
+  const [activeCard, setActiveCard] = React.useState<number | null>(null);
 
   const handleCardClick = (id: number) => {
-    setFlippedCards(prevState => ({
-      ...prevState,
-      [id]: !prevState[id]
-    }));
+    setActiveCard(prevState => prevState === id ? null : id);
   };
 
   return (
@@ -114,7 +111,7 @@ const DemosPage: React.FC = () => {
               <DemoCard 
                 demo={demo} 
                 onClick={() => handleCardClick(demo.id)} 
-                flipped={flippedCards[demo.id]} 
+                flipped={activeCard === demo.id} 
               />
             </Grid>
           ))}
