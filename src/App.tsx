@@ -5,6 +5,7 @@ import DemosPage from '../src/pages/DemosPage/DemosPage.tsx';
 import ProjectsPage from '../src/pages/ProjectsPage/ProjectsPage.tsx';
 import ResumePage from '../src/pages/ResumePage/ResumePage.tsx';
 import WhoIAmPage from '../src/pages/WhoIAmPage/WhoIAmPage.tsx';
+import './App.css';
 
 
 function App() {

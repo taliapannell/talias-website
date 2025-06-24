@@ -32,7 +32,7 @@ const WhoIAmPage: React.FC = () => {
       <Header />
       {!showVideo && (
         <div className="play-overlay" onClick={handlePlayClick}>
-          <span className="play-text">▶ Play Me</span>
+          <span className="play-text">▶ Play</span>
         </div>
       )}
       {showVideo && (
