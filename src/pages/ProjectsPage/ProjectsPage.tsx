@@ -95,13 +95,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick, flipped }) 
 };
 
 const ProjectsPage: React.FC = () => {
-  const [flippedCards, setFlippedCards] = React.useState<{ [key: number]: boolean }>({});
+  const [activeCard, setActiveCard] = React.useState<number | null>(null);
 
   const handleCardClick = (id: number) => {
-    setFlippedCards(prevState => ({
-      ...prevState,
-      [id]: !prevState[id]
-    }));
+    setActiveCard(prevState => prevState === id ? null : id);
   };
 
   return (
@@ -114,7 +111,7 @@ const ProjectsPage: React.FC = () => {
               <ProjectCard 
                 project={project} 
                 onClick={() => handleCardClick(project.id)} 
-                flipped={flippedCards[project.id]} 
+                flipped={activeCard === project.id} 
               />
             </Grid>
           ))}
