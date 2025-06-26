@@ -18,6 +18,7 @@ const Header: React.FC = () => {
           <li><Link to="/demos">DEMOS</Link></li> 
           <li><Link to="/resume">RESUME</Link></li> 
           <li><Link to="/whoiam">WHO I AM</Link></li>
+          <li><Link to="/testimonials">TESTIMONIALS</Link></li>
           <li>
             <a href="https://www.linkedin.com/in/talia-pannell/" target="_blank" rel="noopener noreferrer">
               <img src={linkedinLogo} alt="LinkedIn Logo" className="linkedin-logo" />
