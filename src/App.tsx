@@ -5,6 +5,7 @@ import DemosPage from '../src/pages/DemosPage/DemosPage.tsx';
 import ProjectsPage from '../src/pages/ProjectsPage/ProjectsPage.tsx';
 import ResumePage from '../src/pages/ResumePage/ResumePage.tsx';
 import WhoIAmPage from '../src/pages/WhoIAmPage/WhoIAmPage.tsx';
+import TestimonialsPage from '../src/pages/TestimonialsPage/TestimonialsPage.tsx';
 import './App.css';
 
 
@@ -18,7 +19,7 @@ function App() {
         <Route path="/projects" element={<ProjectsPage />} /> 
         <Route path="/resume" element={<ResumePage />} /> 
         <Route path="/whoiam" element={<WhoIAmPage />} /> 
-
+        <Route path="/testimonials" element={<TestimonialsPage />} />
       </Routes>
     </Router>
   );
