@@ -15,60 +15,46 @@ interface Testimonial {
   id: number;
   name: string;
   role: string;
-  company: string;
   text: string;
-  rating: number;
   avatarUrl?: string;
 }
 
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Name 1",
-    role: "Senior Developer",
-    company: "Tech Company",
-    text: "Working with Talia was an incredible experience. Her technical expertise and innovative thinking helped us solve complex problems in record time. I highly recommend her for any engineering project.",
-    rating: 5,
+    name: "Carlyle Campbell",
+    role: "Welcome Host",
+    text: "I met Talia one day and she’s been nothing short of pleasant and super helpful. The best part though is how Talia handles the group; she absolutely shines when explaining how it works, what it’s used for, it’s capabilities and its limits. Talia is always the best and brightest part of our tours.",
   },
   {
     id: 2,
-    name: "Name 2",
-    role: "Project Manager",
-    company: "Enterprise Solutions",
-    text: "Talia's contributions to our team were invaluable. She consistently delivered high-quality work ahead of schedule and mentored junior team members. Her communication skills and technical knowledge are outstanding.",
-    rating: 5,
+    name: "Daniel Steinberg",
+    role: "Advanced App Engineering Specialist",
+    text: "Talia's enthusiasm is infectious, and she is incredibly proactive and reliable in achieving her goals. Her communication skills are exceptional. Talia is a skilled developer and quick learner. When I first met Talia, she was still relatively new to coding, but by last summer, she had already become a very strong front-end programmer.",
   },
   {
     id: 3,
-    name: "Name 3",
-    role: "CTO",
-    company: "Tech Startup",
-    text: "We brought Talia in to help with a critical project that was falling behind schedule. Her problem-solving abilities and work ethic turned everything around. She's a true professional who delivers results.",
-    rating: 5,
+    name: "Lester Bravo",
+    role: "Full Stack Engineering Specialist",
+    text: "Talia has demonstrated great versatility and commitment in her role within the team. She has shown a willingness to take on both frontend and backend development, showcasing her adaptability and a strong sense of collaboration. Her contributions have been invaluable, and her proactive attitude has positively impacted the team's progress.",
   },
   {
     id: 4,
-    name: "Name 4",
-    role: "Engineering Director",
-    company: "Fortune 500 Company",
-    text: "Talia's engineering skills are truly exceptional. She tackles complex challenges with creativity and precision. What sets her apart is her ability to translate technical concepts into clear, actionable insights.",
-    rating: 5,
+    name: "Silvia Chorny",
+    role: "HR Service Delivery Senior Analyst",
+    text: "Your story was an inspiration for anyone interested in starting their careers with us, here at Accenture. Your hard work and dedication made a huge impact. Looking back on the work that you have done, we hope that you can now see yourself as an example to all future apprentices. We are so proud of you and we hope you are too!",
   },
   {
     id: 5,
-    name: "Name 5",
-    role: "Product Owner",
-    company: "Software Solutions Inc.",
-    text: "I was impressed by Talia's ability to understand our business needs and deliver technical solutions that exceeded our expectations. She's not just a talented engineer but also a strategic thinker.",
-    rating: 5,
+    name: "Evelyn Stellara",
+    role: "Advanced App Engineering Specialist",
+    text: "Talia has shown great progress in her programming skills and has become proficient in delivering tasks based on requirements. Her ability to work efficiently is evident from her recent project delivery, showing commendable adaptability in transitioning into a new project role and consistently delivering work within the given timeline.",
   },
   {
     id: 6,
-    name: "Name 6",
-    role: "VP of Engineering",
-    company: "Innovation Labs",
-    text: "Having worked with many engineers over the years, I can confidently say that Talia stands out. Her combination of technical expertise, creativity, and collaborative approach makes her an exceptional talent.",
-    rating: 5,
+    name: "Jennifer Malach",
+    role: "Inclusion and Diversity Senior Manager",
+    text: "Thank you so much for sharing your expertise at our event yesterday! Hudson was a big hit – but only because of your presentation and active engagement with the educators in the room. Helping them experience first-hand the type of work we do was a crucial part of this program and I really appreciate you taking the time to join.",
   }
 ];
 
@@ -104,7 +90,7 @@ const TestimonialsPage: React.FC = () => {
                           {testimonial.name}
                         </Typography>
                         <Typography variant="caption" color="textSecondary" className="testimonial-role">
-                          {testimonial.role}, {testimonial.company}
+                          {testimonial.role}
                         </Typography>
                       </Box>
                     </Box>
