@@ -26,7 +26,7 @@ const ResumePage = () => {
       }}
     >
       <iframe 
-        src="/Talia Pannell's Resume.pdf" 
+        src="/Talia Pannell Short Resume.pdf" 
         width="80%" 
         height="90%" 
         style={{
